@@ -1,32 +1,32 @@
-# FlyRank AI Machine Learning Internship — Reflection & Experience
+# FlyRank AI Machine Learning Internship — Capstone & Assignments
 
-- **Track:** Machine Learning
-- **Lane:** Content Refresh Ranking
-- **Repository:** https://github.com/abdulrehman-mk/FlyRank_ml_Internship
+[![Track](https://img.shields.io/badge/Track-Machine%20Learning-blue)]()
+[![Lane](https://img.shields.io/badge/Lane-Content%20Refresh%20Ranking-green)]()
+[![Status](https://img.shields.io/badge/Status-Completed-success)]()
 
-## Experience & Reflection
-Participating in the FlyRank AI Machine Learning Internship was an invaluable journey from theoretical concepts to building real-world, production-ready ML systems. Working with anonymized search data allowed me to tackle genuine search visibility decay challenges without relying on toy datasets or oversimplified heuristics.
+This repository contains all assignments, feature pipelines, baseline rules, modeling notebooks, and the final capstone project completed as part of the **FlyRank AI Machine Learning Internship (July 2026 Cohort)**.
 
-## Key Learnings & Takeaways
-- **Rigorous Problem Framing & Data Hygiene:** Learned how to structure a real-world search intelligence problem, define clear data contracts, and audit signals before writing a single line of model code.
-- **Leakage Prevention & Honest Validation:** Mastered the importance of client-holdout validation splits to ensure models generalize safely across unseen domains without data leakage.
-- **Baseline vs. Complexity:** Understood that machine learning should only be introduced when it beats a transparent, hand-written baseline. Achieving a **3.1x lift in Precision@50** (0.740 vs 0.240) with a Random Forest classifier proved the tangible value of learned models over static rules.
-- **Translating Code into Insights:** Learned to communicate technical findings through structured research reporting, handling false positives/negatives through rigorous error analysis rather than relying solely on metrics tables.
+---
 
-## Structure
-- `data/` — Raw and processed search performance datasets.
-- `submission/` — Contains `paper_url.txt` linking to the capstone report.
-- `work/` — Weekly assignment notebooks, outputs, and `capstone_report.md`.
-- `requirements.txt` — Project dependencies.
+## 📌 Project Overview
+Digital publishers face continuous search visibility decay. This project builds and evaluates machine learning ranking models to predict which web pages require urgent content updates, outperforming traditional static rules.
 
-## Results Summary
-- **Baseline Rule (Precision@50):** 0.240
-- **Random Forest Model (Precision@50):** 0.740 (~3.1x lift)
+- **Primary Lane:** Content Refresh Ranking (Lane 1)
+- **Dataset:** Anonymized search performance data (30,000 records) featuring 90-day impressions, click-through rates (CTR), average search positions, content age, and days since last update.
 
-## Reproducibility
-1. Clone the repo: `git clone https://github.com/abdulrehman-mk/FlyRank_ml_Internship`
-2. Install dependencies: `pip install -r requirements.txt`
-3. Execute notebooks in `work/notebooks/` sequentially.
+---
 
-## Acknowledgments
-Built on the FlyRank ML Internship dataset (https://flyrank.ai).
+## 📂 Repository Structure
+
+```text
+├── data/
+│   ├── raw/                  # Starter anonymized search datasets
+│   └── processed/            # Cleaned feature vectors and prediction outputs
+├── submission/
+│   └── paper_url.txt         # Direct link to deployed capstone report
+├── work/
+│   ├── notebooks/            # Weekly assignment & modeling notebooks (w01 - w05)
+│   ├── outputs/              # Evaluation results, model reports, and visual charts
+│   └── capstone_report.md    # Complete 10-section capstone research report
+├── requirements.txt          # Python dependencies
+└── README.md                 # Project documentation
