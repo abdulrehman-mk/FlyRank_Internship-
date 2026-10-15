@@ -2,7 +2,7 @@
 
 - **Author:** Abdul Rehman
 - **Lane:** Content Refresh Ranking (Lane 1)
-- **Repo:** https://github.com/abdulrehman-mk/FlyRank_Internship-
+- **Repo:** https://github.com/abdulrehman-mk/FlyRank_ml_Internship
 - **Date:** October 2026
 
 ## 0. Abstract
@@ -31,10 +31,9 @@ Editors should prioritize high-probability pages identified by the model, specif
 
 ## 8. Reproducibility
 To reproduce the results:
-1. Clone the repo: `git clone https://github.com/abdulrehman-mk/FlyRank_Internship-`
+1. Clone the repo: `git clone https://github.com/abdulrehman-mk/FlyRank_ml_Internship`
 2. Install dependencies: `pip install -r requirements.txt`
-3. Execute notebooks sequentially in `work/notebooks/` (w01 through w05).
-All splits use `random_state=42`.
+3. Execute notebooks sequentially in `work/notebooks/` (w01 through w05). All splits use `random_state=42`.
 
 ## 9. Acknowledgments & data credit
 Built on the FlyRank ML Internship dataset ([https://flyrank.ai](https://flyrank.ai)).
